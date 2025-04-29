@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.0.1</Version>
+    <Authors>Imran Irfan</Authors>
+    <Company>None</Company>
+    <PackageId>ComputerMetricsLibrary</PackageId>
+    <Description>Metrics library for .NET applications. Used to capture basic system info.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="9.0.4" />
+    <PackageReference Include="System.Management" Version="9.0.4" />
+  </ItemGroup>
+
+</Project>
