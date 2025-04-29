@@ -27,6 +27,8 @@ jobs:
     - name: Build Metrics Library
       run: dotnet build ComputerMetricsLibrary --no-restore
     
+    - name: Add source
+      run: dotnet nuget add source "https://nuget.pkg.github.com/EggnogII/index.json" --name github --username ${{ github.actor }} --password ${{ secrets.NUGET_CRED }} --store-password-in-clear-text
     - name: Publish Metrics Library
       run: dotnet nuget push "ComputerMetricsLibrary/bin/*/*.nupkg" --source "github" --api-key ${{ secrets.NUGET_CRED }} --skip-duplicate
 
