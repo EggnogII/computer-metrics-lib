@@ -3,7 +3,7 @@ using System;
 using System.Diagnostics;
 using System.Management;
 
-class Drive{
+public class Drive{
     public string Name {get; set;}
     public string Type {get; set;}
     public string Volume {get; set;}
@@ -25,7 +25,7 @@ class Drive{
 
 }
 
-class Metric{
+public class Metric{
     public string HostName { get; set; }
     public int ProcessorCount { get; set; }
     public string OSVersion { get; set; }
